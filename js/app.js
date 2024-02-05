@@ -1,82 +1,5 @@
 
 
-
-// let number = 5;
-
-// function addNumber () {
-//     return number += 5
-// }
-
-// console.log(addNumber());
-// console.log(number);
-
-
-
-//////////////  Pure function        ////////////////
-
-
-
-
-// function addNumber () {
-//     let number = 5;
-//     return number += 5
-// }
-
-// console.log(addNumber());
-
-
-
-
-
-// let arr = [2, 3, 5, 7]
-// let cars = [
-//     {mark: "Mercedes-Benz", year:2005, price: "15.000$"},
-//     {mark: "Toyota", year:2012, price: "30.000$"},
-//     {mark: "Lexus", year:2023, price: "80.000$"}
-// ]
-
-// let carss = { mark: "Mercedes-Benz", year:2005, price: "15.000$"}
-
-// const newObj = Object.create(carss)
-// console.log(newObj.price);
-
-
-
-// let obj = { mark: "Mercedes-Benz", year:2005, price: "15.000$"}
-
-// console.log(Object.entries(obj));
-
-
-
-// for (let [index, value] of Object.entries(cars)) {
-//     console.log(index);
-// }
-
-
-
-
-
-
-function yigindi (n) {
-    let summ = 0;
-    for ( let i = 0; i <= n; i++ ) {
-        summ += i;
-    }
-    return summ
-}
-console.log(yigindi(10));
-
-
-
-
-
-
-
-
-
-
-
-
 // uy ishi
 
 
@@ -97,7 +20,7 @@ console.log(yigindi(10));
 // console.log(Object.values(person));
 
 
-// 2-masala
+// // 2-masala
 
 // const person1 = {
 //     name : "Abdulloh",
@@ -113,27 +36,94 @@ console.log(yigindi(10));
 
 //  //  3-masala
 
-// let arr = [4, 5, 7]
 
-let numbers = [1, 2, 3, 4, 5];
-let lastValue = numbers[numbers.length - 1];
+// let numbers = [1, 2, 3, 4, 5, 11];
 
-// Oxirgi qiymatni aniqlash va unga 1 qo'shish
-let newValue = lastValue + 1;
+// let lastValue = numbers[numbers.length - 1];
 
-// Yangi qiymatni array oxiriga qo'shish
-numbers.push(newValue);
+// // Oxirgi qiymatni aniqlash va unga 1 qo'shish
+// let newValue = lastValue + 1;
 
-console.log(numbers); // Natijada oxirida [1, 2, 3, 4, 5, 6]
+// // Yangi qiymatni array oxiriga qo'shish
+// numbers.push(newValue);
 
-
+// console.log(numbers);
 
 
+// //   4-masala
+
+
+// let numbers = [88, 77, 3]
+
+// for (let  i = 1; )
+
+// ---------------  ######  ------------------
+
+// //   5-masala
+
+
+// let array1 = [4, 5, 6, 7]
+
+// console.log("Boshlang'ich array:", array1);
+
+// let birinchiQiymat1 = array1[0];
+// let oxirigiQiymat = array1[array1.length - 1];
+
+// array1 [0] = oxirigiQiymat;
+// array1[array1.length -1] = birinchiQiymat1;
+
+// console.log("Almshtirilgan array:", array1);
+
+ 
+//   //   6-masala
+
+
+function sozlarArraygaQosh(promptSoni, array = []) {
+    if (promptSoni > 0) {
+        let soz = prompt("So'z kiriting:");
+        array.push(soz);
+        return sozlarArraygaQosh(promptSoni - 1, array);
+    } else {
+        return array;
+    }
+}
+
+let natijaArray = sozlarArraygaQosh(6);
+console.log("Natija array:", natijaArray);
 
 
 
-// let num = [3, 9, 5, 10]
 
-// for (let i =0; i < num.length; i++) {
-//     if (num [i] % 2 ==0)
+
+
+
+
+
+
+/////////////////////-----------.....//////////////
+
+
+
+
+// bu boshqa masalalar//////////
+// ############
+
+// let arr = []
+// let result = 0
+
+// function addNumber () {
+//     let elNumber = Number(prompt("Son kirit"))
+//     arr.push(elNumber)
+//     if (arr.length < 4) {
+//         addNumber ()
+//     }
+//     else {
+//         for (let i = 0; i < arr.length; i++) {
+//             result += arr[i]
+//         }
+//     }
 // }
+// addNumber()
+// console.log(result);
+
+
